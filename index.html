@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/unslider.css">
+    <link rel="stylesheet" href="css/unslider-dots.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Online store</title>
+</head>
+<body>
+    <header>
+        <div class="center-block-main">
+            <div class="header-top">
+                <div class="logo-block">
+                    <p class="logo">Biruang</p>
+                </div>
+                <div class="contact-basket">
+                    <p class="header-phone"><img src="images/ico-phone.jpg" alt="phone"> +371 282 20 760</p>
+                    <p class="header-basket"><img src="images/ico-basket.jpg" alt="basket">$ 99.54<a href="#">Checkout</a></p>
+                </div>
+                
+
+            </div>
+            <div class="header-bottom">
+                <nav>
+                    <ul class="menu">
+                        <li><a href="#">home</a></li>
+                        <li><a href="#">men</a></li>
+                        <li><a href="#">women</a></li>
+                        <li><a href="#">kids</a></li>
+                        <li><a href="#">sale</a></li>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">support</a></li>
+                    </ul>
+                </nav>
+                <div class="search-block">
+                    <form action="" method="get">
+                        <input type="image" src="images/search-btn.jpg" class="search-btn"> 
+                        <input type="search" class="search" placeholder="Search...">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="my-slider center-block-main">
+        <ul>
+            <li>
+                <h2>RIGHT IS PINK.<br>LEFT IS BLUE</h2>
+                <p>Inspired by Brasil’s bold colors and matching up to football’s on-pitch<br>playmakers, these kicks are ready to stand out.</p>
+                <img src="images/slide1.jpg" alt="">
+            </li>
+            <li><h2>RIGHT IS PINK.<br>LEFT IS BLUE</h2>
+                <p>Inspired by Brasil’s bold colors and matching up to football’s on-pitch<br>playmakers, these kicks are ready to stand out.</p>
+                <img src="images/slide1.jpg" alt="">
+            </li>
+            <li><h2>RIGHT IS PINK.<br>LEFT IS BLUE</h2>
+                <p>Inspired by Brasil’s bold colors and matching up to football’s on-pitch<br>playmakers, these kicks are ready to stand out.</p>
+                <img src="images/slide1.jpg" alt="">
+            </li>
+        </ul>
+    </div>
+
+
+
+
+
+
+
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="js/unslider-min.js"></script>
+    <script>
+        jQuery(document).ready(function($){
+            $('.my-slider').unslider({
+                autoplay:true,
+                speed:1700,
+                arrows:false
+            });
+        });
+    </script>
+</body>
+</html>
