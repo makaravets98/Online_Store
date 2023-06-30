@@ -84,9 +84,10 @@
                 vivamus congue nulla leo, quis imperdiet magna.</p>
         </article>
     </div>
-    <h2 class="popular-product">Popular product</h2>
-    <div class="block-4-main center-block-main">
-        
+
+    <div class="center-block-main">
+    <h2 class="popular-product">Popular products</h2>
+    <div class="block-4-main">
         <article>
             <img src="images/img41.jpg" alt="">
                 <div class="block-4-info">
@@ -95,11 +96,11 @@
                     <p>The Nike Tailwind Loose Women's Running Tank <br>
                         Top is made with sweat-wicking fabric to help you <br>
                         stay dry and comfortable on your run.</p>
-                <div class="block-4-price">
-                    <p id="price">$ 36.99</p>
-                    <img src="images/ico-plus.jpg" alt="">
+                    <div class="block-4-price">
+                        <p id="price">$ 36.99</p>
+                        <a href="#" alt><img src="images/ico-plus.jpg" alt=""></a>
+                    </div>
                 </div>
-            </div>
         </article>
         <article>
             <img src="images/img42.jpg" alt="">
@@ -111,7 +112,7 @@
                 comfort during any workout.</p>
             <div class="block-4-price">
                 <p id="price">$ 49.99</p>
-                <img src="images/ico-plus.jpg" alt="">
+                <a href="#" alt><img src="images/ico-plus.jpg" alt=""></a>
             </div>
         </div>
         </article>
@@ -125,7 +126,7 @@
                 lightweight support and targeted breathability.</p>
             <div class="block-4-price">
                 <p id="price">$ 70.00</p>
-                <img src="images/ico-plus.jpg" alt="">
+                <a href="#" alt><img src="images/ico-plus.jpg" alt=""></a>
             </div>
             </div>
         </article>
@@ -139,11 +140,42 @@
                 back panel for comfort and enhanced breathability.</p>
             <div class="block-4-price">
                 <p id="price">$ 28.49</p>
-                <img src="images/ico-plus.jpg" alt="">
+                <a href="#" alt><img src="images/ico-plus.jpg" alt=""></a>
             </div>
             </div>
         </article>
 
+        </div>
+        </div>
+    <div class="about center-block-main">
+        <article>
+            <h2>About</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dictum lectus sit amet varius pulvinar. Proin vitae 
+                dui tincidunt nibh facilisis pellentesque.  Fusce tortor turpis, facilisis ut condimentum eu, sagittis at est.</p>
+                <p>Praesent egestas posuere urna a egestas. Maecenas facilisis orci vitae ante  tempor accumsan. Aenean aliquam 
+                    justo ac sagittis vehicula. Nam mattis pretium odio sit amet vulputate.</p>
+                    <p>Quisque non lobortis orci. Morbi augue mauris, ultrices at fermentum ac, consequat vitae magna. Pellentesque 
+                        non cursus mi, eu cursus nunc. Nullam  et odio tristique, volutpat urna vitae, dignissim orci. Fusce eu nulla urna.
+                        This template was created by Erik Padamans.</p>
+                        <p>Praesent egestas posuere urna a egestas. Maecenas facilisis orci vitae ante  tempor accumsan. Aenean aliquam 
+                            justo ac sagittis vehicula. Nam mattis pretium odio sit amet vulputate.</p>
+        </article>
+        <div class="map">
+            <div class="mapin">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1955.3022086034957!2d18.660853334949806!3d54.3523988288367!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46fd73a11dbbe13f%3A0x731e4d60dc9017f!2z0JrQvtC70LXRgdC-INC-0LHQvtC30YDQtdC90LjRjyBBbWJlclNreQ!5e0!3m2!1sru!2spl!4v1688141129570!5m2!1sru!2spl" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>  
+        </div>
+    </div>
+    <div class="subscribe">
+        <div class="subscribe-block center-block-main">
+            <h2><strong>Sign up</strong> for exclusive sales and product news</h2>
+            <div class="subscribe-form">
+                <form action="" method="get">
+                    <input type="email" class="email-input" placeholder="example@gmail.com">
+                    <input type="submit" class="submit-input" value="sign up">
+                </form>
+            </div>
+        </div>
     </div>
 
 
@@ -162,5 +194,17 @@
             });
         });
     </script>
+
+<script>
+	function setEqualHeight(columns) { 
+		var tallestcolumn = 0; 
+		columns.each( function() { 
+			currentHeight = $(this).height(); 
+			if(currentHeight > tallestcolumn) { tallestcolumn = currentHeight; } } ); 
+			columns.height(tallestcolumn); 
+		} 
+		
+		$(document).ready(function() { setEqualHeight($(".block-4-info")); });
+</script>
 </body>
 </html>
